@@ -12,6 +12,9 @@ body{
     position: relative;
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+
 }
 
 body::before{
@@ -28,5 +31,96 @@ body::before{
 
 header{
     width: max-content;
-    
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    border: 1px solid #ffffff52;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 1.4rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+main{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    border: 1px solid #ffffff52;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.html_css_logo{
+    width: 20%;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 6px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #23d5ab;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+a{
+    color: #23d5ab;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover{
+    color: #e73c7e;
+}
+
+h2{
+    font-weight: 2rem;
+    margin-bottom: 20px;
+}
+
+main p{
+    margin-bottom: 20px;
+}
+
+main img{
+    margin: 20px auto;
+}
+
+@keyframes slideIn{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
